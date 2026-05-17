@@ -15,13 +15,13 @@ docker build -t kolatben/node-web-app .
 
 echo.
 echo [3/4] Instanz 1 starten (Port 3001)...
-echo CMD:docker run -p 3001:3001 --name nodeapp-1 -d kolatben/node-web-app
-docker run -p 3001:3001 --name nodeapp-1 -d kolatben/node-web-app
+echo CMD:docker run -p 3000:3001 --name nodeapp-1 -d kolatben/node-web-app
+docker run -p 3001:3000 --name nodeapp-1 -d kolatben/node-web-app
 
 echo.
 echo [4/4] Instanz 2 starten (Port 3002)...
 echo CMD:docker run -p 3002:3001 --name nodeapp-2 -d kolatben/node-web-app
-docker run -p 3002:3001 --name nodeapp-2 -d kolatben/node-web-app
+docker run -p 3002:3000 --name nodeapp-2 -d kolatben/node-web-app
 
 echo.
 echo ========================================
